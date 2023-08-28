@@ -1,0 +1,73 @@
+#testimonials .testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 264px;
+    color: var(--white-color);
+    font-family: 'Alegreya', serif;
+}
+
+#testimonials .testimonial img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius:10px;
+}
+
+#testimonials .content-container{
+   
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+#testimonials .testimonial .name{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+#testimonials .testimonial .review{
+    font-size: 16px;
+    font-weight: 400;
+    word-break: break-all;
+}
+
+#testimonials .testimonial .company-name{
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 6px 0;
+    opacity: 0.7;
+}
+
+@media(max-width:1040px){
+    #testimonials .content-container{
+        flex-direction: column;
+        gap:50px;
+        margin-left:50px;
+        margin-top:20px;
+    }
+    #testimonials .testimonial{
+        flex-direction: row;
+        width: 100%;
+    }
+    #testimonials .testimonial .reviewer-details{
+        margin-left:28px;
+    }
+}
+
+@media(max-width:720px){
+    #testimonials .content-container{
+        margin-left: 0px;
+    
+    }
+    #testimonials .testimonial{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 16px;
+    }
+    #testimonials .testimonial .reviewer-details{
+        margin-left: 0px;
+        text-align: center;
+    }
+}

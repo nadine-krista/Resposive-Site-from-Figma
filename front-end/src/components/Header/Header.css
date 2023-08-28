@@ -1,0 +1,72 @@
+header {
+  min-height: 100vh;
+  background-image: url("../../assets/images/Header-Bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+header .wrapper {
+  position: relative;
+  height: 100vh;
+}
+header .cta {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 450px;
+  border-radius: 20px 20px 0px 0px;
+  border-top: 4px solid #fff;
+  border-right: 4px solid #fff;
+  border-left: 4px solid #fff;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(25px);
+  padding:50px 40px;
+}
+ header .cta .course-name{
+    color: var(--white-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    position: relative;
+ }
+
+ header .cta .course-name::after{
+    content:'';
+   position: absolute;
+   background-color:var(--brick-color);
+   width: 60px;
+    height: 4px;
+    left:0;
+    bottom: -10px;
+ }
+
+ header .cta h1{
+    color: var(--white-color);
+    font-size: 40px;
+
+    font-weight: 700;
+    line-height:140% ;
+ }
+
+ header .cta .demo-btn{
+    background-color:var(--brick-color);
+    border-radius: 10px;
+    padding: 10px 32px;
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 120%;
+ }
+
+ @media(max-width:1040px){
+    header .cta{
+        width:unset;
+        right:32px;
+        left: 32px;
+    }
+
+    header .cta h1{
+        font-size:32px
+    }
+ }
